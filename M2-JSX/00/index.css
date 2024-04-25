@@ -1,0 +1,17 @@
+body {
+  text-align: center;
+}
+
+img {
+  width: 100%;
+}
+
+.text-red {
+  color: red;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
