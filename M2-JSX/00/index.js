@@ -148,7 +148,7 @@ const element = (
   </div>
 );
 
-root.render(element);
+// root.render(element);
 
 /**********************************************
  * 4 : Cannot Render null, undefined, true, false, object(Error)
@@ -189,6 +189,41 @@ const form = (
  * all dash CSS property -> camelCase
  * all value in CSS -> JS Datatype
  **********************************************/
+
+// 1.Dynamic ClassName
+let isAdmin = false;
+const reactElement = <h1 className={isAdmin ? 'text-red' : 'text-blue'}>React</h1>;
+
+// 2.StyleObject === InlineStyle
+// <h2 style="color:red; font-size:20px; text-decoration:underline;"></h2>
+
+const styledObject = {
+  color: 'red',
+  fontSize: '80px',
+  textDecoration: 'underline',
+};
+// const styledElement = <h2 style={styledObject}>Hi</h2>;
+// const styledElement = (
+//   <h2
+//     style={{
+//       color: 'red',
+//       fontSize: '80px',
+//       textDecoration: 'underline',
+//     }}
+//   >
+//     Hi
+//   </h2>
+// );
+
+// 3. BindFunction to TAG
+
+// JS
+const handleClick = () => alert('Hello');
+
+// JSX
+const button = <button onClick={handleClick}>Click Me</button>;
+
+root.render(button);
 
 /**********************************************
  * 7. Fragment

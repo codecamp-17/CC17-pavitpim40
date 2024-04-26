@@ -15,3 +15,16 @@
  * 🌈 Enjoy the coding journey, and remember:
  *    "The more you code, the more you learn!" 🚀🌐
  **********************************************/
+
+// UI
+const profileElement = (
+  <>
+    <h1>Pavit Pimchanagul</h1>
+    <p>Age : {2024 - 2000}</p>
+  </>
+);
+
+// Render
+const domNode = document.getElementById('root');
+const root = ReactDOM.createRoot(domNode);
+root.render(profileElement);
