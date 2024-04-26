@@ -10,6 +10,9 @@ img {
   color: red;
 }
 
+.text-blue {
+  color: blue;
+}
 .flex-col {
   display: flex;
   flex-direction: column;

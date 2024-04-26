@@ -17,3 +17,15 @@
  * 🌈 Enjoy the coding journey, and remember:
  *    "The more you code, the more you learn!" 🚀🌐
  **********************************************/
+// Logic
+function BMI(m, h) {
+  return m / h ** 2;
+}
+
+// UI
+const bmiElement = <h3>BMI : {BMI(70, 1.75).toFixed(2)}</h3>;
+
+// Render
+const domRoot = document.getElementById('root');
+const root = ReactDOM.createRoot(domRoot);
+root.render(bmiElement);

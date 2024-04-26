@@ -22,3 +22,17 @@
  * 🌈 Enjoy the coding journey, and remember:
  *    "The more you code, the more you learn!" 🚀🌐
  **********************************************/
+
+// UI
+// const inputElement = (
+//   <>
+//     <label htmlFor='_username'>Username </label>
+//     <input className='username' id='_username' name='username' />
+//   </>
+// );
+
+// Render
+const domRoot = document.getElementById('root');
+const root = ReactDOM.createRoot(domRoot);
+
+// root.render(inputElement);
